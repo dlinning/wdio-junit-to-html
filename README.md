@@ -4,7 +4,7 @@ This is meant to be used with Webdriverio's JUnit reporter.
 
 A simple CLI tool to convert generated JUnit test results to HTML reports.
 
-### NOTE: Version 3.0.0 is the lowest working version.
+### NOTE: Version 3.0.1 is the lowest working version.
 
 ---
 

@@ -1,0 +1,35 @@
+{
+  "name": "wdio-junit-to-html",
+  "version": "3.0.0",
+  "description": "A simple CLI module to convert WebdriverIO JUnit tests to HTML.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlinning/junit-to-html.git"
+  },
+  "keywords": [
+    "wdio",
+    "wdio-html",
+    "junit",
+    "junittohtml",
+    "html",
+    "junit2html",
+    "jdc"
+  ],
+  "author": "Doug Linning <douglinning@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dlinning/junit-to-html/issues"
+  },
+  "homepage": "https://github.com/dlinning/junit-to-html#readme",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "xml2js": "^0.4.17"
+  },
+  "bin": {
+    "wdio-junit-to-html": "./index.js"
+  }
+}

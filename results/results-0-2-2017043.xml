@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="desktop_footer_tests" timestamp="2017-04-03T13:16:39" time="12.311" tests="0" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="d4686f9c9945267dc8c0b029f807c425"/>
+      <property name="suiteName" value="Desktop Footer Tests"/>
+      <property name="capabilities" value="chrome"/>
+      <property name="file" value=".\tests\Desktop\Footer.js"/>
+    </properties>
+  </testsuite>
+  <testsuite name="footer_basics" timestamp="2017-04-03T13:16:42" time="2.761" tests="4" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="d4686f9c9945267dc8c0b029f807c425"/>
+      <property name="suiteName" value="Footer Basics"/>
+      <property name="capabilities" value="chrome"/>
+      <property name="file" value=".\tests\Desktop\Footer.js"/>
+    </properties>
+    <testcase classname="chrome.footer_basics" name="should_exist" time="0.517">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":386424369,"value":{"ELEMENT":"0"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/0/location - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":429924106,"value":{"x":0,"y":3987,"hCode":0,"class":"org.openqa.selenium.Point"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/execute - {"script":"return (function scroll(x, y) {\n    return window.scrollTo(x, y);\n}).apply(null, arguments)","args":[0,3987]}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1612172220,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1392098827,"value":{"ELEMENT":"0"},"class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.footer_basics" name="should_display_the_call_text_us_phone_number" time="0.618">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":699148211,"value":{"ELEMENT":"0"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/0/location - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":699783394,"value":{"x":0,"y":3976,"hCode":0,"class":"org.openqa.selenium.Point"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/execute - {"script":"return (function scroll(x, y) {\n    return window.scrollTo(x, y);\n}).apply(null, arguments)","args":[0,3976]}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1803043658,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/elements - {"using":"css selector","value":"footer .FooterLinkColumn.last .FooterLinkBlockWrapper .FooterLinkBlock .Line2"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1539448629,"value":[{"ELEMENT":"1"}],"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/1/text - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":890266110,"value":"1-800-562-5391","class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.footer_basics" name="email_us_is_working" time="1.059">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":194025796,"value":{"ELEMENT":"0"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/0/location - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":822174470,"value":{"x":0,"y":3976,"hCode":0,"class":"org.openqa.selenium.Point"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/execute - {"script":"return (function scroll(x, y) {\n    return window.scrollTo(x, y);\n}).apply(null, arguments)","args":[0,3976]}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1795430091,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer .FooterLinkBlockWrapper:nth-of-type(2) a"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1589422033,"value":{"ELEMENT":"2"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/2/click - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":675312227,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/url - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":2102526920,"value":"https://www.jockey.com/customerservice/contactus","class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.footer_basics" name="has_copyright_text" time="0.565">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":794398208,"value":{"ELEMENT":"3"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/3/location - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1328238623,"value":{"x":0,"y":696,"hCode":0,"class":"org.openqa.selenium.Point"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/execute - {"script":"return (function scroll(x, y) {\n    return window.scrollTo(x, y);\n}).apply(null, arguments)","args":[0,696]}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":290100958,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/elements - {"using":"id","value":"AllRightsReserved"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":215434947,"value":[{"ELEMENT":"4"}],"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/4/text - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":984759806,"value":"sitemap | Jockey International, Inc. ©2017. All rights reserved.","class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+  <testsuite name="footer_main_links" timestamp="2017-04-03T13:16:45" time="4.296" tests="0" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="d4686f9c9945267dc8c0b029f807c425"/>
+      <property name="suiteName" value="Footer Main Links"/>
+      <property name="capabilities" value="chrome"/>
+      <property name="file" value=".\tests\Desktop\Footer.js"/>
+    </properties>
+  </testsuite>
+  <testsuite name="email" timestamp="2017-04-03T13:16:45" time="0.367" tests="3" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="d4686f9c9945267dc8c0b029f807c425"/>
+      <property name="suiteName" value="Email"/>
+      <property name="capabilities" value="chrome"/>
+      <property name="file" value=".\tests\Desktop\Footer.js"/>
+    </properties>
+    <testcase classname="chrome.email" name="should_exist" time="0.074">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":769435236,"value":{"ELEMENT":"3"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/3/location - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":273324462,"value":{"x":0,"y":685,"hCode":0,"class":"org.openqa.selenium.Point"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/execute - {"script":"return (function scroll(x, y) {\n    return window.scrollTo(x, y);\n}).apply(null, arguments)","args":[0,685]}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1873385506,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"id","value":"EmailSignupLink"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1488500284,"value":{"ELEMENT":"5"},"class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.email" name="should_have_the_proper_icon" time="0.092">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1150928880,"value":{"ELEMENT":"3"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/3/location - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1971934392,"value":{"x":0,"y":685,"hCode":0,"class":"org.openqa.selenium.Point"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/execute - {"script":"return (function scroll(x, y) {\n    return window.scrollTo(x, y);\n}).apply(null, arguments)","args":[0,685]}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1292287644,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/elements - {"using":"id","value":"EmailSignupImage"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":718310027,"value":[{"ELEMENT":"6"}],"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/6/css/background - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":990956276,"value":"rgba(0, 0, 0, 0) url(\"https://images.jockey.com/directmail/sprite/Sprite_030514.png\") no-repeat scroll -50px -10px / auto padding-box border-box","class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.email" name="should_open_email_signup_on_click" time="0.2">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":195086668,"value":{"ELEMENT":"3"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/3/location - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":118475904,"value":{"x":0,"y":685,"hCode":0,"class":"org.openqa.selenium.Point"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/execute - {"script":"return (function scroll(x, y) {\n    return window.scrollTo(x, y);\n}).apply(null, arguments)","args":[0,685]}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":646222588,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"id","value":"EmailSignupLink"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":2031289277,"value":{"ELEMENT":"5"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/5/click - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1328063875,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/elements - {"using":"id","value":"riser"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":465979028,"value":[{"ELEMENT":"7"}],"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/7/attribute/data-open - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":271297653,"value":"true","class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+  <testsuite name="rewards" timestamp="2017-04-03T13:16:45" time="1.068" tests="2" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="d4686f9c9945267dc8c0b029f807c425"/>
+      <property name="suiteName" value="Rewards"/>
+      <property name="capabilities" value="chrome"/>
+      <property name="file" value=".\tests\Desktop\Footer.js"/>
+    </properties>
+    <testcase classname="chrome.rewards" name="should_exist" time="0.053">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1166302673,"value":{"ELEMENT":"3"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/3/location - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1602567083,"value":{"x":0,"y":685,"hCode":0,"class":"org.openqa.selenium.Point"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/execute - {"script":"return (function scroll(x, y) {\n    return window.scrollTo(x, y);\n}).apply(null, arguments)","args":[0,685]}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1700734878,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"id","value":"RewardsLink"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1806570296,"value":{"ELEMENT":"8"},"class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.rewards" name="should_redirect_to_rewards_page_on_click" time="1.014">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":314358017,"value":{"ELEMENT":"3"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/3/location - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1620478071,"value":{"x":0,"y":685,"hCode":0,"class":"org.openqa.selenium.Point"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/execute - {"script":"return (function scroll(x, y) {\n    return window.scrollTo(x, y);\n}).apply(null, arguments)","args":[0,685]}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":708469272,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"id","value":"RewardsLink"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":405930600,"value":{"ELEMENT":"8"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/8/click - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1444247964,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/url - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":2143268458,"value":"https://www.jockey.com/rewards","class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+  <testsuite name="catalog" timestamp="2017-04-03T13:16:46" time="1.536" tests="2" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="d4686f9c9945267dc8c0b029f807c425"/>
+      <property name="suiteName" value="Catalog"/>
+      <property name="capabilities" value="chrome"/>
+      <property name="file" value=".\tests\Desktop\Footer.js"/>
+    </properties>
+    <testcase classname="chrome.catalog" name="should_exist" time="0.507">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":2135844652,"value":{"ELEMENT":"9"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/9/location - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1687373174,"value":{"x":0,"y":1053,"hCode":0,"class":"org.openqa.selenium.Point"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/execute - {"script":"return (function scroll(x, y) {\n    return window.scrollTo(x, y);\n}).apply(null, arguments)","args":[0,1053]}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1375427087,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"id","value":"CatalogRequestLink"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":541457615,"value":{"ELEMENT":"10"},"class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.catalog" name="should_redirect_to_catalog_page_on_click" time="1.028">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":750688492,"value":{"ELEMENT":"9"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/9/location - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":456785180,"value":{"x":0,"y":1042,"hCode":0,"class":"org.openqa.selenium.Point"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/execute - {"script":"return (function scroll(x, y) {\n    return window.scrollTo(x, y);\n}).apply(null, arguments)","args":[0,1042]}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":209581461,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"id","value":"CatalogRequestLink"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":659410525,"value":{"ELEMENT":"10"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/10/click - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":617677527,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/url - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1286414762,"value":"https://www.jockey.com/shoppingguide/catalogrequest","class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+  <testsuite name="stores" timestamp="2017-04-03T13:16:48" time="1.325" tests="2" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="d4686f9c9945267dc8c0b029f807c425"/>
+      <property name="suiteName" value="Stores"/>
+      <property name="capabilities" value="chrome"/>
+      <property name="file" value=".\tests\Desktop\Footer.js"/>
+    </properties>
+    <testcase classname="chrome.stores" name="should_exist" time="0.46">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":2096243210,"value":{"ELEMENT":"11"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/11/location - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":2028715750,"value":{"x":0,"y":1034,"hCode":0,"class":"org.openqa.selenium.Point"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/execute - {"script":"return (function scroll(x, y) {\n    return window.scrollTo(x, y);\n}).apply(null, arguments)","args":[0,1034]}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1596552632,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"id","value":"StoreRequestLink"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1773944221,"value":{"ELEMENT":"12"},"class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.stores" name="should_redirect_to_store_page_on_click" time="0.865">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":195153264,"value":{"ELEMENT":"11"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/11/location - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1602746849,"value":{"x":0,"y":1023,"hCode":0,"class":"org.openqa.selenium.Point"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/execute - {"script":"return (function scroll(x, y) {\n    return window.scrollTo(x, y);\n}).apply(null, arguments)","args":[0,1023]}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":287623606,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"id","value":"StoreRequestLink"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":65413638,"value":{"ELEMENT":"12"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/12/click - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":101754107,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/url - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":258072500,"value":"https://www.jockey.com/shoppingguide/storelocator","class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+  <testsuite name="social_media_links" timestamp="2017-04-03T13:16:49" time="1.289" tests="0" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="d4686f9c9945267dc8c0b029f807c425"/>
+      <property name="suiteName" value="Social Media Links"/>
+      <property name="capabilities" value="chrome"/>
+      <property name="file" value=".\tests\Desktop\Footer.js"/>
+    </properties>
+  </testsuite>
+  <testsuite name="facebook" timestamp="2017-04-03T13:16:49" time="0.651" tests="2" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="d4686f9c9945267dc8c0b029f807c425"/>
+      <property name="suiteName" value="Facebook"/>
+      <property name="capabilities" value="chrome"/>
+      <property name="file" value=".\tests\Desktop\Footer.js"/>
+    </properties>
+    <testcase classname="chrome.facebook" name="should_exist" time="0.574">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":619876229,"value":{"ELEMENT":"13"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/13/location - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1679495738,"value":{"x":0,"y":696,"hCode":0,"class":"org.openqa.selenium.Point"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/execute - {"script":"return (function scroll(x, y) {\n    return window.scrollTo(x, y);\n}).apply(null, arguments)","args":[0,696]}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":427076172,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer .FacebookImage"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1237320271,"value":{"ELEMENT":"14"},"class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.facebook" name="should_have_the_proper_link" time="0.076">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1187007651,"value":{"ELEMENT":"13"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/13/location - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":529221352,"value":{"x":0,"y":685,"hCode":0,"class":"org.openqa.selenium.Point"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/execute - {"script":"return (function scroll(x, y) {\n    return window.scrollTo(x, y);\n}).apply(null, arguments)","args":[0,685]}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1988001113,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/elements - {"using":"css selector","value":"footer .FacebookImage"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":504805074,"value":[{"ELEMENT":"14"}],"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/14/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":474118468,"value":"http://www.facebook.com/jockey","class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+  <testsuite name="twitter" timestamp="2017-04-03T13:16:50" time="0.117" tests="2" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="d4686f9c9945267dc8c0b029f807c425"/>
+      <property name="suiteName" value="Twitter"/>
+      <property name="capabilities" value="chrome"/>
+      <property name="file" value=".\tests\Desktop\Footer.js"/>
+    </properties>
+    <testcase classname="chrome.twitter" name="should_exist" time="0.05">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":580972008,"value":{"ELEMENT":"13"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/13/location - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":542676554,"value":{"x":0,"y":685,"hCode":0,"class":"org.openqa.selenium.Point"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/execute - {"script":"return (function scroll(x, y) {\n    return window.scrollTo(x, y);\n}).apply(null, arguments)","args":[0,685]}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1807438217,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer .TwitterImage"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1681482678,"value":{"ELEMENT":"15"},"class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.twitter" name="should_have_the_proper_link" time="0.066">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":784524816,"value":{"ELEMENT":"13"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/13/location - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1638424285,"value":{"x":0,"y":685,"hCode":0,"class":"org.openqa.selenium.Point"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/execute - {"script":"return (function scroll(x, y) {\n    return window.scrollTo(x, y);\n}).apply(null, arguments)","args":[0,685]}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":88700220,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/elements - {"using":"css selector","value":"footer .TwitterImage"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1848611829,"value":[{"ELEMENT":"15"}],"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/15/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":539166672,"value":"http://www.twitter.com/jockey","class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+  <testsuite name="instagram" timestamp="2017-04-03T13:16:50" time="0.128" tests="2" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="d4686f9c9945267dc8c0b029f807c425"/>
+      <property name="suiteName" value="Instagram"/>
+      <property name="capabilities" value="chrome"/>
+      <property name="file" value=".\tests\Desktop\Footer.js"/>
+    </properties>
+    <testcase classname="chrome.instagram" name="should_exist" time="0.055">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":169976508,"value":{"ELEMENT":"13"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/13/location - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":296037700,"value":{"x":0,"y":685,"hCode":0,"class":"org.openqa.selenium.Point"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/execute - {"script":"return (function scroll(x, y) {\n    return window.scrollTo(x, y);\n}).apply(null, arguments)","args":[0,685]}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":623531165,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer .InstagramImage"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":686729990,"value":{"ELEMENT":"16"},"class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.instagram" name="should_have_the_proper_link" time="0.072">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":114800723,"value":{"ELEMENT":"13"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/13/location - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1723915186,"value":{"x":0,"y":685,"hCode":0,"class":"org.openqa.selenium.Point"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/execute - {"script":"return (function scroll(x, y) {\n    return window.scrollTo(x, y);\n}).apply(null, arguments)","args":[0,685]}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":351609671,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/elements - {"using":"css selector","value":"footer .InstagramImage"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1592089917,"value":[{"ELEMENT":"16"}],"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/16/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":331765543,"value":"http://instagram.com/jockey","class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+  <testsuite name="pinterest" timestamp="2017-04-03T13:16:50" time="0.117" tests="2" failures="0" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="d4686f9c9945267dc8c0b029f807c425"/>
+      <property name="suiteName" value="Pinterest"/>
+      <property name="capabilities" value="chrome"/>
+      <property name="file" value=".\tests\Desktop\Footer.js"/>
+    </properties>
+    <testcase classname="chrome.pinterest" name="should_exist" time="0.053">
+      <error message="expected { Object (state, sessionId, ...) } to be null"/>
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1720878248,"value":{"ELEMENT":"13"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/13/location - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1681876862,"value":{"x":0,"y":685,"hCode":0,"class":"org.openqa.selenium.Point"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/execute - {"script":"return (function scroll(x, y) {\n    return window.scrollTo(x, y);\n}).apply(null, arguments)","args":[0,685]}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":997828071,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer .PinterestImage"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1594973834,"value":{"ELEMENT":"17"},"class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+      <system-err>
+        <![CDATA[
+AssertionError: expected { Object (state, sessionId, ...) } to be null
+    at Context.<anonymous> (C:\Users\linningd\Desktop\MochaTests\tests\Desktop\Footer.js:116:72)
+    at C:\Users\linningd\Desktop\MochaTests\node_modules\wdio-sync\build\index.js:578:26
+    at Promise.F (C:\Users\linningd\Desktop\MochaTests\node_modules\core-js\library\modules\_export.js:35:28)
+    at Context.executeSync (C:\Users\linningd\Desktop\MochaTests\node_modules\wdio-sync\build\index.js:576:12)
+    at C:\Users\linningd\Desktop\MochaTests\node_modules\wdio-sync\build\index.js:734:42
+]]>
+      </system-err>
+    </testcase>
+    <testcase classname="chrome.pinterest" name="should_have_the_proper_link" time="0.061">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1535439985,"value":{"ELEMENT":"13"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/13/location - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1648599348,"value":{"x":0,"y":685,"hCode":0,"class":"org.openqa.selenium.Point"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/execute - {"script":"return (function scroll(x, y) {\n    return window.scrollTo(x, y);\n}).apply(null, arguments)","args":[0,685]}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":796677769,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/elements - {"using":"css selector","value":"footer .PinterestImage"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1126018356,"value":[{"ELEMENT":"17"}],"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/17/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1564024842,"value":"http://www.pinterest.com/jockeyus/","class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+  <testsuite name="youtube" timestamp="2017-04-03T13:16:50" time="0.134" tests="2" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="d4686f9c9945267dc8c0b029f807c425"/>
+      <property name="suiteName" value="YouTube"/>
+      <property name="capabilities" value="chrome"/>
+      <property name="file" value=".\tests\Desktop\Footer.js"/>
+    </properties>
+    <testcase classname="chrome.youtube" name="should_exist" time="0.055">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1552295614,"value":{"ELEMENT":"13"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/13/location - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":731508951,"value":{"x":0,"y":685,"hCode":0,"class":"org.openqa.selenium.Point"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/execute - {"script":"return (function scroll(x, y) {\n    return window.scrollTo(x, y);\n}).apply(null, arguments)","args":[0,685]}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":162973354,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer .YouTubeImage"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1463987881,"value":{"ELEMENT":"18"},"class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.youtube" name="should_have_the_proper_link" time="0.077">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1979948201,"value":{"ELEMENT":"13"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/13/location - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":440885974,"value":{"x":0,"y":685,"hCode":0,"class":"org.openqa.selenium.Point"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/execute - {"script":"return (function scroll(x, y) {\n    return window.scrollTo(x, y);\n}).apply(null, arguments)","args":[0,685]}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1482287952,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/elements - {"using":"css selector","value":"footer .YouTubeImage"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":241838308,"value":[{"ELEMENT":"18"}],"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/18/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":306288363,"value":"http://www.youtube.com/jockey","class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+  <testsuite name="blog" timestamp="2017-04-03T13:16:50" time="0.142" tests="2" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="d4686f9c9945267dc8c0b029f807c425"/>
+      <property name="suiteName" value="Blog"/>
+      <property name="capabilities" value="chrome"/>
+      <property name="file" value=".\tests\Desktop\Footer.js"/>
+    </properties>
+    <testcase classname="chrome.blog" name="should_exist" time="0.08">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1787920054,"value":{"ELEMENT":"13"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/13/location - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":571425837,"value":{"x":0,"y":685,"hCode":0,"class":"org.openqa.selenium.Point"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/execute - {"script":"return (function scroll(x, y) {\n    return window.scrollTo(x, y);\n}).apply(null, arguments)","args":[0,685]}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":677687979,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer .BlogImage"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":36380631,"value":{"ELEMENT":"19"},"class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.blog" name="should_have_the_proper_link" time="0.062">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1207967473,"value":{"ELEMENT":"13"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/13/location - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":188652377,"value":{"x":0,"y":685,"hCode":0,"class":"org.openqa.selenium.Point"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/execute - {"script":"return (function scroll(x, y) {\n    return window.scrollTo(x, y);\n}).apply(null, arguments)","args":[0,685]}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":83419908,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/elements - {"using":"css selector","value":"footer .BlogImage"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":397812475,"value":[{"ELEMENT":"19"}],"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/19/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1544479130,"value":"http://blog.jockey.com/","class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+  <testsuite name="test_all_footer_links" timestamp="2017-04-03T13:16:51" time="1.158" tests="0" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="d4686f9c9945267dc8c0b029f807c425"/>
+      <property name="suiteName" value="Test ALL Footer Links"/>
+      <property name="capabilities" value="chrome"/>
+      <property name="file" value=".\tests\Desktop\Footer.js"/>
+    </properties>
+  </testsuite>
+  <testsuite name="links_should_be_valid" timestamp="2017-04-03T13:16:51" time="1.158" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="d4686f9c9945267dc8c0b029f807c425"/>
+      <property name="suiteName" value="Links should be valid"/>
+      <property name="capabilities" value="chrome"/>
+      <property name="file" value=".\tests\Desktop\Footer.js"/>
+    </properties>
+    <testcase classname="chrome.links_should_be_valid" name="will_test_all_links_in_the_footer" time="1.157">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element - {"using":"css selector","value":"footer"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":950965454,"value":{"ELEMENT":"13"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/13/location - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":100763755,"value":{"x":0,"y":685,"hCode":0,"class":"org.openqa.selenium.Point"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/execute - {"script":"return (function scroll(x, y) {\n    return window.scrollTo(x, y);\n}).apply(null, arguments)","args":[0,685]}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1535042560,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/elements - {"using":"css selector","value":"footer a"}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1340546552,"value":[{"ELEMENT":"20"},{"ELEMENT":"21"},{"ELEMENT":"22"},{"ELEMENT":"23"},{"ELEMENT":"24"},{"ELEMENT":"25"},{"ELEMENT":"26"},{"ELEMENT":"27"},{"ELEMENT":"28"},{"ELEMENT":"29"},"(58 more items)"],"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/20/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1622648197,"value":"","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/21/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1421975720,"value":"https://www.jockey.com/","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/22/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":685544291,"value":"sms:+1-800-562-5391","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/23/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":649388484,"value":"tel:+1-800-562-5391","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/24/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1449529453,"value":"javascript:void(0);","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/25/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1475735991,"value":"https://www.jockey.com/shoppingguide/storelocator","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/26/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1481089377,"value":"http://www.facebook.com/Jockey/","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/27/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1973059696,"value":"http://www.twitter.com/Jockey/","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/28/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":754739113,"value":"http://www.youtube.com/jockey/","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/29/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":929280217,"value":"http://blog.jockey.com/","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/30/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":297467816,"value":"http://instagram.com/jockey","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/31/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1450146940,"value":"http://www.pinterest.com/jockeyus/","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/32/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":475869674,"value":"https://www.jockey.com/customerservice/contactus","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/33/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":364219251,"value":"https://www.jockey.com/careers","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/34/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":983543156,"value":"https://www.jockey.com/customerservice/privacypolicy","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/35/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1129739379,"value":"https://www.jockey.com/customerservice/faq","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/36/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1151396878,"value":"https://www.jockey.com/ourcompany/index","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/37/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1097312639,"value":"javascript:void(0);","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/38/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1993714106,"value":"https://www.jockey.com/rewards","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/39/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":310785960,"value":"https://www.jockey.com/shoppingguide/catalogrequest","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/40/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":441141329,"value":"https://www.jockey.com/shoppingguide/storelocator","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/14/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":409072660,"value":"http://www.facebook.com/jockey","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/15/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":233602491,"value":"http://www.twitter.com/jockey","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/16/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":2003754085,"value":"http://instagram.com/jockey","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/17/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1946532077,"value":"http://www.pinterest.com/jockeyus/","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/18/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1649113830,"value":"http://www.youtube.com/jockey","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/19/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":2101871312,"value":"http://blog.jockey.com/","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/41/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":743761270,"value":"https://www.jockey.com/customerservice/","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/42/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":954219534,"value":"https://www.jockey.com/customerservice/contactus","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/43/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1590311884,"value":"https://www.jockey.com/customerservice/returnpolicy","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/44/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":617254584,"value":"https://www.jockey.com/customerservice/shippinginformation","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/45/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1349062041,"value":"https://www.jockey.com/customerservice/privacypolicy","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/46/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1500730231,"value":"https://www.jockey.com/customerservice/faq","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/47/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":20432498,"value":"https://www.jockey.com/customerservice/termsandconditions","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/48/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":631453047,"value":"https://www.jockey.com/customerservice/patentsinformation","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/49/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1517561751,"value":"https://www.jockey.com/customerservice/testimonialdisclosure","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/50/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1271698909,"value":"https://www.jockey.com/account/index","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/51/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1542997320,"value":"https://www.jockey.com/account/orderhistory","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/52/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1077458567,"value":"https://www.jockey.com/rewards","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/53/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1656820341,"value":"https://www.jockey.com/account/personalinformation","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/54/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":60009756,"value":"https://www.jockey.com/account/creditcards","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/55/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":979474060,"value":"https://www.jockey.com/account/addressbook","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/56/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":642351278,"value":"https://www.jockey.com/account/myautoship","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/57/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1668977661,"value":"https://www.jockey.com/account/resetpassword","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/58/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1414497214,"value":"https://www.jockey.com/shoppingguide/storelocator","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/59/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1065505578,"value":"https://www.jockey.com/troopid","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/60/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1429912597,"value":"https://www.jockey.com/firstresponder","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/61/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":358818004,"value":"https://www.jockey.com/students","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/62/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":325737222,"value":"https://www.jockey.com/shoppingguide/sizecharts","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/63/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":224879190,"value":"https://www.jockey.com/shoppingguide/giftcards","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/64/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":71097387,"value":"https://www.jockey.com/ourcompany/index","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/65/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":224620117,"value":"https://www.jockey.com/careers","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/66/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":970916094,"value":"https://www.jockey.com/ourcompany/ourhistory","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/67/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1288581897,"value":"https://www.jockey.com/pressroom","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/68/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":566417305,"value":"https://www.jockey.com/ourcompany/fmlarights","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/69/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1488352199,"value":"https://www.jockey.com/ourcompany/wrapcertification","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/70/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1575776456,"value":"https://www.jockey.com/ourcompany/codeofconduct","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/71/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1513040047,"value":"https://www.jockey.com/ourcompany/supplychaincompliance","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/72/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1964399288,"value":"http://blog.jockey.com/","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/73/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":805937076,"value":"http://www.jockeybeingfamily.com/","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/74/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1395894236,"value":"http://www.facebook.com/jockey","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/75/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":490701212,"value":"http://www.twitter.com/jockey","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/76/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1652911860,"value":"http://instagram.com/jockey/","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/77/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":501566522,"value":"http://www.pinterest.com/jockeyus/","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/78/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1557211228,"value":"http://www.youtube.com/jockey","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/79/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1051489657,"value":"https://www.jockey.com/customerservice/contactus","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/80/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":458582756,"value":"javascript:void(0)","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163/element/81/attribute/href - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1109702951,"value":"https://www.jockey.com/sitemap","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: DELETE http://127.0.0.1:4444/wd/hub/session/ce555c81-b11c-4f21-b312-6cfd6e454163 - {}
+RESULT: {"state":"success","sessionId":"ce555c81-b11c-4f21-b312-6cfd6e454163","hCode":1435906837,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="desktop_account_tests" timestamp="2017-04-03T13:16:39" time="7.674" tests="0" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="689f383c3063b157cec79b057f6213ed"/>
+      <property name="suiteName" value="Desktop Account Tests"/>
+      <property name="capabilities" value="chrome"/>
+      <property name="file" value=".\tests\Desktop\Account.js"/>
+    </properties>
+  </testsuite>
+  <testsuite name="verify_login_link" timestamp="2017-04-03T13:16:41" time="5.66" tests="5" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="689f383c3063b157cec79b057f6213ed"/>
+      <property name="suiteName" value="Verify Login Link"/>
+      <property name="capabilities" value="chrome"/>
+      <property name="file" value=".\tests\Desktop\Account.js"/>
+    </properties>
+    <testcase classname="chrome.verify_login_link" name="should_display_login" time="0.706">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/97d99908-6237-4782-b7fb-646eda0b5d91/elements - {"using":"id","value":"MyAccount"}
+RESULT: {"state":"success","sessionId":"97d99908-6237-4782-b7fb-646eda0b5d91","hCode":61212287,"value":[{"ELEMENT":"0"}],"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/97d99908-6237-4782-b7fb-646eda0b5d91/element/0/text - {}
+RESULT: {"state":"success","sessionId":"97d99908-6237-4782-b7fb-646eda0b5d91","hCode":1676315214,"value":"Login","class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.verify_login_link" name="should_redirect_to_login_page" time="0.001"/>
+    <testcase classname="chrome.verify_login_link" name="should_show_a_popup_on_hover" time="0.118">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/97d99908-6237-4782-b7fb-646eda0b5d91/element - {"using":"id","value":"MyAccount"}
+RESULT: {"state":"success","sessionId":"97d99908-6237-4782-b7fb-646eda0b5d91","hCode":1461401011,"value":{"ELEMENT":"0"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/97d99908-6237-4782-b7fb-646eda0b5d91/moveto - {"element":"0"}
+RESULT: {"state":"success","sessionId":"97d99908-6237-4782-b7fb-646eda0b5d91","hCode":756637242,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/97d99908-6237-4782-b7fb-646eda0b5d91/elements - {"using":"id","value":"MyAccountFlyOut"}
+RESULT: {"state":"success","sessionId":"97d99908-6237-4782-b7fb-646eda0b5d91","hCode":969357721,"value":[{"ELEMENT":"1"}],"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/97d99908-6237-4782-b7fb-646eda0b5d91/element/1/attribute/style - {}
+RESULT: {"state":"success","sessionId":"97d99908-6237-4782-b7fb-646eda0b5d91","hCode":2035376671,"value":"display: block;","class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.verify_login_link" name="should_not_display_my_account_when_logged_out" time="1.428">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/97d99908-6237-4782-b7fb-646eda0b5d91/url - {"url":"https://www.jockey.com/account/login?ReturnUrl=%2Faccount"}
+RESULT: {"state":"success","sessionId":"97d99908-6237-4782-b7fb-646eda0b5d91","hCode":179813114,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/97d99908-6237-4782-b7fb-646eda0b5d91/elements - {"using":"id","value":"MyAccount"}
+RESULT: {"state":"success","sessionId":"97d99908-6237-4782-b7fb-646eda0b5d91","hCode":1093288939,"value":[{"ELEMENT":"2"}],"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/97d99908-6237-4782-b7fb-646eda0b5d91/element/2/text - {}
+RESULT: {"state":"success","sessionId":"97d99908-6237-4782-b7fb-646eda0b5d91","hCode":1419563257,"value":"Login","class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.verify_login_link" name="should_display_my_account_when_logged_in" time="3.404">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/97d99908-6237-4782-b7fb-646eda0b5d91/url - {"url":"https://www.jockey.com/account/login?ReturnUrl=%2Faccount"}
+RESULT: {"state":"success","sessionId":"97d99908-6237-4782-b7fb-646eda0b5d91","hCode":1759586967,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/97d99908-6237-4782-b7fb-646eda0b5d91/elements - {"using":"id","value":"UserName"}
+RESULT: {"state":"success","sessionId":"97d99908-6237-4782-b7fb-646eda0b5d91","hCode":1612274023,"value":[{"ELEMENT":"3"}],"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/97d99908-6237-4782-b7fb-646eda0b5d91/element/3/clear - {}
+RESULT: {"state":"success","sessionId":"97d99908-6237-4782-b7fb-646eda0b5d91","hCode":1471619610,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/97d99908-6237-4782-b7fb-646eda0b5d91/element/3/value - {"value":["a","s","d","f","@","a","s","d","f",".","(3 more items)"]}
+RESULT: {"state":"success","sessionId":"97d99908-6237-4782-b7fb-646eda0b5d91","hCode":1552770430,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/97d99908-6237-4782-b7fb-646eda0b5d91/elements - {"using":"id","value":"Password"}
+RESULT: {"state":"success","sessionId":"97d99908-6237-4782-b7fb-646eda0b5d91","hCode":728353254,"value":[{"ELEMENT":"4"}],"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/97d99908-6237-4782-b7fb-646eda0b5d91/element/4/clear - {}
+RESULT: {"state":"success","sessionId":"97d99908-6237-4782-b7fb-646eda0b5d91","hCode":1081979360,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/97d99908-6237-4782-b7fb-646eda0b5d91/element/4/value - {"value":["a","s","d","f","a","s","d","f"]}
+RESULT: {"state":"success","sessionId":"97d99908-6237-4782-b7fb-646eda0b5d91","hCode":788496127,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/97d99908-6237-4782-b7fb-646eda0b5d91/element - {"using":"css selector","value":".placeholder-form"}
+RESULT: {"state":"success","sessionId":"97d99908-6237-4782-b7fb-646eda0b5d91","hCode":1638758514,"value":{"ELEMENT":"5"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/97d99908-6237-4782-b7fb-646eda0b5d91/element/5/submit - {}
+RESULT: {"state":"success","sessionId":"97d99908-6237-4782-b7fb-646eda0b5d91","hCode":810474072,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/97d99908-6237-4782-b7fb-646eda0b5d91/elements - {"using":"id","value":"MyAccount"}
+RESULT: {"state":"success","sessionId":"97d99908-6237-4782-b7fb-646eda0b5d91","hCode":533552238,"value":[{"ELEMENT":"6"}],"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/97d99908-6237-4782-b7fb-646eda0b5d91/element/6/text - {}
+RESULT: {"state":"success","sessionId":"97d99908-6237-4782-b7fb-646eda0b5d91","hCode":2083818235,"value":"My Account","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: DELETE http://127.0.0.1:4444/wd/hub/session/97d99908-6237-4782-b7fb-646eda0b5d91 - {}
+RESULT: {"state":"success","sessionId":"97d99908-6237-4782-b7fb-646eda0b5d91","hCode":2009565013,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

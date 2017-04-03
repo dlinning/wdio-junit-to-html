@@ -1,7 +1,6 @@
 {
   "name": "wdio-junit-to-html",
-  "version": "3.0.2",
-  "version": "3.0.0",
+  "version": "3.0.3",
   "description": "A simple CLI module to convert WebdriverIO JUnit tests to HTML.",
   "main": "index.js",
   "scripts": {
@@ -28,6 +27,7 @@
   "homepage": "https://github.com/dlinning/junit-to-html#readme",
   "dependencies": {
     "commander": "^2.9.0",
+    "dateformat": "^2.0.0",
     "xml2js": "^0.4.17"
   },
   "bin": {

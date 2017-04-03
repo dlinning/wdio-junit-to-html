@@ -22,7 +22,7 @@ var passed = 0;
 program
 .usage('[options]')
 .option('-i, --input <input>', 'The input folder path (relative)')
-.option('-o, --output <output>', 'The output folder path (relative))
+.option('-o, --output <output>', 'The output folder path (relative)')
 .option('-s, --single','Export all reports in one file')
 .option('-l, --log','Log basic information about what is being done.')
 .parse(process.argv);

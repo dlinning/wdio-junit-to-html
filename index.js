@@ -44,7 +44,7 @@ function parse(data){
         if(s == 0){
             //First suite, contains information about source file
 
-            var fp = suite['properties'][0]['property'][3]['$']['value'].toString().split('\\');
+            var fp = suite['properties'][0]['property'][2]['$']['value'].toString().split('\\');
             var outFp = "";
             for(var n=fp.length-srcFileDepth;n<fp.length;n++){
                 outFp += '\\'+fp[n];
